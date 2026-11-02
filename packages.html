@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages | Voyago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="packages">
+  <header id="header"></header>
+
+  <section class="page-banner" style="background-image:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80')">
+    <div class="container">
+      <h1>Curated Travel Packages</h1>
+      <p>All-inclusive trips with flights, stays, tours and transfers — fully planned.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Packages</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Choose Your Style</span>
+        <h2 class="section-title">Find the Perfect Trip</h2>
+        <p class="section-sub" id="searchLabel">Filter by travel style to find a package that suits you.</p>
+      </div>
+      <div class="filters" id="pkgFilters"></div>
+      <div class="grid grid-3" data-packages-page></div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Every Package Includes</span>
+        <h2 class="section-title">Travel Without Worries</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="feature"><div class="stat-icon"><i class="fa-solid fa-plane"></i></div><h3>Flights</h3><p>Return flights from major airports.</p></div>
+        <div class="feature"><div class="stat-icon"><i class="fa-solid fa-hotel"></i></div><h3>Hotels</h3><p>Handpicked 4 & 5-star stays.</p></div>
+        <div class="feature"><div class="stat-icon"><i class="fa-solid fa-van-shuttle"></i></div><h3>Transfers</h3><p>Private airport pickup & drop-off.</p></div>
+        <div class="feature"><div class="stat-icon"><i class="fa-solid fa-person-hiking"></i></div><h3>Guided Tours</h3><p>Local experts at every stop.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | Voyago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="destinations">
+  <header id="header"></header>
+
+  <section class="page-banner" style="background-image:url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=1920&q=80')">
+    <div class="container">
+      <h1>Featured Destinations</h1>
+      <p>From sun-kissed islands to snowy peaks — find the place that calls to you.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Destinations</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Explore by Region</span>
+        <h2 class="section-title">Where Do You Want to Go?</h2>
+        <p class="section-sub">Click any destination to see the travel packages available there.</p>
+      </div>
+      <div class="filters" id="destFilters"></div>
+      <div class="grid grid-4" data-destinations></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Can't Decide Where to Go?</h2>
+          <p>Our travel experts will craft a custom itinerary just for you.</p>
+        </div>
+        <a href="contact.html" class="btn btn-light">Talk to an Expert <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

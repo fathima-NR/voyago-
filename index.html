@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyago | Discover Your Next Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header id="header"></header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag"><i class="fa-solid fa-earth-americas"></i> Explore the world with us</span>
+        <h1>Discover Your <span>Next Adventure</span></h1>
+        <p>Handpicked destinations, curated travel packages and unforgettable experiences — all planned for you by local experts.</p>
+        <div class="hero-actions">
+          <a href="packages.html" class="btn btn-primary">Explore Packages <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="destinations.html" class="btn btn-light">View Destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container search-wrap">
+    <form class="search-box" id="searchForm">
+      <div class="search-field">
+        <label><i class="fa-solid fa-location-dot"></i> Destination</label>
+        <input type="text" name="destination" placeholder="Where are you going?">
+      </div>
+      <div class="search-field">
+        <label><i class="fa-regular fa-calendar"></i> Check In</label>
+        <input type="date">
+      </div>
+      <div class="search-field">
+        <label><i class="fa-regular fa-calendar-check"></i> Check Out</label>
+        <input type="date">
+      </div>
+      <div class="search-field">
+        <label><i class="fa-solid fa-user-group"></i> Guests</label>
+        <select>
+          <option>1 Guest</option>
+          <option selected>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4+ Guests</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Top Picks</span>
+          <h2 class="section-title">Featured Destinations</h2>
+        </div>
+        <a href="destinations.html" class="view-all">View all destinations <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid grid-4" data-destinations data-limit="4"></div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Best Deals</span>
+          <h2 class="section-title">Curated Travel Packages</h2>
+        </div>
+        <a href="packages.html" class="view-all">View all packages <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid grid-3" data-packages data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div><div><h3>50,000+</h3><p>Happy Travelers</p></div></div>
+        <div class="stat"><div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div><div><h3>300+</h3><p>Destinations</p></div></div>
+        <div class="stat"><div class="stat-icon"><i class="fa-solid fa-star"></i></div><div><h3>4.9/5</h3><p>Customer Rating</p></div></div>
+        <div class="stat"><div class="stat-icon"><i class="fa-solid fa-award"></i></div><div><h3>15+</h3><p>Years Experience</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section-title">What Our Travelers Say</h2>
+        </div>
+        <a href="testimonials.html" class="view-all">Read all reviews <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid grid-3" data-testimonials data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Get Travel Inspiration<br>Straight to Your Inbox</h2>
+          <p>Exclusive deals, travel tips and new destinations every week.</p>
+        </div>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

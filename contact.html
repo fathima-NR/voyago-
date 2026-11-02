@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Voyago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <header id="header"></header>
+
+  <section class="page-banner" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80')">
+    <div class="container">
+      <h1>Contact & Booking</h1>
+      <p>Tell us about your dream trip and we'll get back within 24 hours.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="section-title">We're Here to Help</h2>
+        <div class="info-card"><div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div><div><h4>Visit Us</h4><p>Sheikh Zayed Rd, Dubai, UAE</p></div></div>
+        <div class="info-card"><div class="stat-icon"><i class="fa-solid fa-phone"></i></div><div><h4>Call Us</h4><p>+971 4 123 4567<br>Mon – Sat, 9am – 7pm</p></div></div>
+        <div class="info-card"><div class="stat-icon"><i class="fa-solid fa-envelope"></i></div><div><h4>Email Us</h4><p>hello@voyago.com<br>bookings@voyago.com</p></div></div>
+      </div>
+
+      <form class="form-card" id="contactForm">
+        <h3>Plan Your Trip</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name</label><input type="text" required placeholder="John Doe"></div>
+          <div class="form-group"><label>Email</label><input type="email" required placeholder="john@email.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+971 50 000 0000"></div>
+          <div class="form-group">
+            <label>Package</label>
+            <select>
+              <option>Custom Trip</option>
+              <option>Island Escape – Maldives</option>
+              <option>Mediterranean Getaway – Santorini</option>
+              <option>Bali Explorer</option>
+              <option>Alpine Adventure – Swiss Alps</option>
+              <option>Romantic Paris</option>
+              <option>Desert Luxury – Dubai</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Travel Date</label><input type="date"></div>
+          <div class="form-group"><label>Travelers</label><input type="number" min="1" value="2"></div>
+        </div>
+        <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Tell us about your dream trip..."></textarea></div>
+        <button type="submit" class="btn btn-primary">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-msg" id="formMsg"><i class="fa-solid fa-circle-check"></i> Thank you! Our travel expert will contact you shortly.</p>
+      </form>
+    </div>
+
+    <div class="container map">
+      <iframe src="https://www.google.com/maps?q=Sheikh+Zayed+Road+Dubai&output=embed" loading="lazy" title="Map"></iframe>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Get Travel Inspiration<br>Straight to Your Inbox</h2>
+          <p>Exclusive deals, travel tips and new destinations every week.</p>
+        </div>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
